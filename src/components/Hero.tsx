@@ -32,8 +32,8 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-[1100px] gap-10 px-6 py-16 sm:grid-cols-[1.1fr_0.9fr] sm:gap-8 sm:px-10 sm:py-20">
         <div>
           <h1 className="font-mono text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            <span aria-hidden="true" className="text-accent">
-              {"<"}
+            <span aria-hidden="true" className="v-swing text-accent">
+              V
             </span>{" "}
             VISHAL <span className="text-accent">PATIL</span>{" "}
             <span aria-hidden="true" className="text-accent">

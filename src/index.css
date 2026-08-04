@@ -30,6 +30,48 @@
   }
 }
 
+/*
+ * The "V" of Vishal hangs upright for a beat, then swings down like it is
+ * hinged and settles at 90deg — where the same glyph reads as the opening
+ * bracket of `< VISHAL PATIL />`. The letter becomes the tag; there is no
+ * character swap, it is one V throughout.
+ */
+@keyframes v-swing {
+  0%,
+  18% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(101deg);
+  }
+  70% {
+    transform: rotate(83deg);
+  }
+  82% {
+    transform: rotate(95deg);
+  }
+  91% {
+    transform: rotate(88deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.v-swing {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  animation: v-swing 1.6s cubic-bezier(0.45, 0.05, 0.35, 1) 0.35s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Skip the swing entirely and render the settled bracket. */
+  .v-swing {
+    animation: none;
+    transform: rotate(90deg);
+  }
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--color-bg);
