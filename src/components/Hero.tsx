@@ -135,12 +135,6 @@ export function Hero() {
               Email
             </a>
           </div>
-          <a
-            href="mailto:vishalpatil948@gmail.com"
-            className="rounded-btn bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
-          >
-            Let's build something
-          </a>
         </div>
       </div>
     </header>

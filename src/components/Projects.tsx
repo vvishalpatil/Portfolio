@@ -24,6 +24,14 @@ export function Projects() {
             </p>
             <div className="mt-5 flex flex-wrap gap-6 text-sm">
               <a
+                href="https://madetocode.io"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-accent underline-offset-4 hover:underline"
+              >
+                madetocode.io
+              </a>
+              <a
                 href="https://youtube.com/@madetocode7"
                 target="_blank"
                 rel="noreferrer"
