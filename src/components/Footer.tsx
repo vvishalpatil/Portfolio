@@ -1,8 +1,9 @@
-import { GitHubIcon, LinkedInIcon, MailIcon } from "./icons";
+import { GitHubIcon, LeetCodeIcon, LinkedInIcon, MailIcon } from "./icons";
 
 const links = [
   { label: "GitHub", href: "https://github.com/vvishalpatil", Icon: GitHubIcon },
   { label: "LinkedIn", href: "https://linkedin.com/in/vishalpatil37", Icon: LinkedInIcon },
+  { label: "LeetCode", href: "https://leetcode.com/u/vvishalpatil", Icon: LeetCodeIcon },
   { label: "Email", href: "mailto:vishalpatil948@gmail.com", Icon: MailIcon },
 ];
 
