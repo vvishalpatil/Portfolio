@@ -2,6 +2,7 @@ import { Reveal } from "./Reveal";
 
 const stack = [
   "React",
+  "Next.js",
   "TypeScript",
   "JavaScript ES6+",
   "Redux",
@@ -24,19 +25,26 @@ const stack = [
 export function StackStrip() {
   return (
     <Reveal className="mt-12 border-t border-border pt-10">
-      <p className="text-[11px] font-bold uppercase tracking-[2px] text-text-3">
-        What I work with daily
-      </p>
-      <div className="mt-4 flex flex-wrap gap-2.5">
-        {stack.map((tech) => (
-          <span
-            key={tech}
-            className="rounded-pill border border-border bg-surface px-4 py-1.5 text-[13px] text-text-2 transition-colors hover:border-accent-border hover:bg-accent-dim"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
+      {/* scroll-mt clears the jump target from the top of the viewport when
+          linked to from the hero's "All skills" button. */}
+      <section id="skills" aria-labelledby="skills-heading" className="scroll-mt-8">
+        <h2
+          id="skills-heading"
+          className="text-[11px] font-bold uppercase tracking-[2px] text-text-3"
+        >
+          What I work with daily
+        </h2>
+        <div className="mt-4 flex flex-wrap gap-2.5">
+          {stack.map((tech) => (
+            <span
+              key={tech}
+              className="rounded-pill border border-border bg-surface px-4 py-1.5 text-[13px] text-text-2 transition-colors hover:border-accent-border hover:bg-accent-dim"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </section>
     </Reveal>
   );
 }

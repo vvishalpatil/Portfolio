@@ -2,13 +2,17 @@ import { GitHubIcon, MailIcon } from "./icons";
 
 const focusAreas = ["Product Engineering", "Design Systems", "Accessibility", "Performance"];
 
+// Brand colours are lightened where the real one fails WCAG AA on this near
+// black background — #3178C6 (TypeScript) only reaches 4.05:1 at this size.
 const stack = [
   { label: "React", className: "bg-[#61DAFB]/10 text-[#61DAFB] border-[#61DAFB]/30" },
-  // Lightened from the #3178C6 brand blue, which only reaches 4.05:1 on this
-  // dark background and fails WCAG AA for 12px text.
+  { label: "Next.js", className: "bg-white/10 text-white border-white/30" },
   { label: "TypeScript", className: "bg-[#6BA5E7]/10 text-[#6BA5E7] border-[#6BA5E7]/30" },
+  { label: "JavaScript", className: "bg-[#F0DB4F]/10 text-[#F0DB4F] border-[#F0DB4F]/30" },
   { label: "Redux", className: "bg-[#B07EE0]/10 text-[#B07EE0] border-[#B07EE0]/30" },
   { label: "Node.js", className: "bg-[#7DBE5C]/10 text-[#7DBE5C] border-[#7DBE5C]/30" },
+  { label: "Express", className: "bg-[#9CA3AF]/10 text-[#9CA3AF] border-[#9CA3AF]/30" },
+  { label: "Vite", className: "bg-[#A78BFA]/10 text-[#A78BFA] border-[#A78BFA]/30" },
   { label: "Storybook", className: "bg-[#FF4785]/10 text-[#FF4785] border-[#FF4785]/30" },
 ];
 
@@ -68,6 +72,12 @@ export function Hero() {
                 {tech.label}
               </span>
             ))}
+            <a
+              href="#skills"
+              className="rounded-md border border-white/25 px-3 py-1.5 text-xs font-semibold text-white/70 transition-colors hover:border-accent-border hover:bg-accent-dim hover:text-accent"
+            >
+              All skills ↓
+            </a>
           </div>
 
           <div className="mt-10 inline-flex items-start gap-3 rounded-lg border border-accent-border bg-white/[0.03] px-5 py-4">

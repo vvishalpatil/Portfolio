@@ -64,7 +64,15 @@
   animation: v-swing 1.6s cubic-bezier(0.45, 0.05, 0.35, 1) 0.35s both;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   /* Skip the swing entirely and render the settled bracket. */
   .v-swing {
     animation: none;
